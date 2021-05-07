@@ -5,9 +5,133 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(242, 242, 242);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.imageExpandedContainer img {
+  max-width: 100%;
+  min-height: 200px;
+  background-color: rgba(255,255,255,.3);
+  border-radius:4px;
+  min-width: 100%;
+  margin-bottom:10px;
+}
+.logoNaN path {
+  fill: #ffffff;
+}
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgb(86, 109, 244);
+  padding:5px;
+}
+.optionsBlock {
+  display: inline-flex;
+  justify-content:space-evenly;
+  width: 100%;
+}
+.credits {
+  text-align: center;
+  width: 100%;
+}
+.credits h1 {
+  font-weight:600;
+  letter-spacing:0.5px;
+  font-size:2.5rem;
+}
+.credits h1 span {
+  font-weight:900;
+  color: #566df4;
+}
+
+.credits h2 {
+  font-weight:600;
+  letter-spacing:0.5px;
+  font-size:1.2rem;
+}
+.credits h3 {
+  font-weight:600;
+  letter-spacing:0.5px;
+  font-size:0.8rem;
+}
+.credits h1 {
+  font-weight:600;
+  letter-spacing:0.5px;
+  font-size:2.5rem;
+}
+
+.horizontal-slider {
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+}
+.vertical-slider {
+  height: 380px;
+  width: 50px;
+}
+.example-thumb {
+  font-size: 0.9em;
+  text-align: center;
+  background-color: #3143ab;
+  color: white;
+  cursor: pointer;
+  border: 5px solid #4457c6;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.example-thumb.active {
+  background-color: grey;
+}
+.example-track {
+  position: relative;
+  background: #3143ab;
+}
+.example-track.example-track-1 {
+  background: #5668d4;
+}
+.example-track.example-track-2 {
+  background: #5668d4;
+}
+.example-mark {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.horizontal-slider .example-track {
+  top: 20px;
+  height: 10px;
+}
+.horizontal-slider .example-thumb {
+  top: 1px;
+  width: 50px;
+  height: 48px;
+  line-height: 38px;
+}
+.horizontal-slider .example-mark {
+  margin: 0 calc(25px - 6px);
+  bottom: calc(50% - 6px);
+}
+.vertical-slider .example-thumb {
+  left: 1px;
+  width: 48px;
+  line-height: 40px;
+  height: 50px;
+}
+.vertical-slider .example-track {
+  left: 20px;
+  width: 10px;
+}
+.vertical-slider .example-mark {
+  margin: calc(25px - 6px) 0;
+  left: calc(50% - 6px);
 }
