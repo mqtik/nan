@@ -65,15 +65,15 @@ const RenderImageContent = ({ children, imageId, gridData }) => {
     if(!imageElement || (!imageElement.url)){
       return '';
     }
-    let newUrl = getSettings.map(([key, val]) => `${key}=${val}`).join('&');
-    if(newUrl){
-      imageElement.url += `?${newUrl}`;
+    const extractParams = getSettings.map(([key, val]) => `${key}=${val}`).join('&');
+    let newUrl = imageElement.url;
+    if(extractParams){
+      newUrl += `?${extractParams}`;
     }
-    return imageElement.url;
+    return newUrl;
   }
   return <div>
     {children}
-    
       <div className={"imageExpandedContainer"}>
         <img src={getUrlByFilterSettings(imageElement)} />
         <RenderOptions />
